@@ -1,0 +1,273 @@
+@font-face {
+  src: url("quantum screen assets/Quicksand font 1/static/Quicksand-Bold.ttf");
+  src: url("quantum screen assets/Quicksand font 1/static/Quicksand-Light.ttf");
+  src: url("quantum screen assets/Quicksand font 1/static/Quicksand-Medium.ttf");
+  src: url("quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf");
+  src: url("quantum screen assets/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+  font-family: Quicksand;
+}
+body {
+  background-color: rgb(226, 224, 224);
+  margin: 0px;
+  padding: 0px;
+  font-family: Quicksand;
+}
+.header {
+    background: #25313F;
+    /* padding: 0 30px; */
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo{
+    margin-left: 15px;
+} 
+.profile{
+    margin-right: 15px;
+}
+.header-title {
+    color: #FFFFFF;
+    font: normal normal bold 20px/18px 'Quicksand';
+    margin-left: 5px;
+}
+
+.nav {
+    text-align: right;
+    letter-spacing: 0px;
+    color: #3FD28B;
+    text-transform: uppercase;
+    margin: 0px 16px;
+    padding: 8px 0 4px 0;
+    border-bottom: 4px solid #25313F;
+}
+
+.nav:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.profile>img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: #3FD28B 2px solid;
+}
+
+.menu{
+    display: none;
+}
+
+.dashboard {
+    margin-left: auto;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(187, 184, 184);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(75, 74, 74);
+  margin-bottom: 0px;
+  margin-top: 60px;
+}
+.main{
+  margin-top: 60px;
+}
+.ruler{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 50px;
+    background-color: #8DDC97;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+}
+
+.item:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black; /* Set the color of the underline on hover */
+}
+
+.item i {
+  color: black;
+  font-size: 20px;
+}
+
+.filter{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+}
+.filter p{
+    margin-right: auto;
+}
+.filter img{
+    margin-left: 20px;
+}
+.sortby{
+    border-color: rgb(226, 224, 224);
+    border-bottom-color: rgb(207, 204, 204);
+    padding: 0px;
+    background-color: rgb(226, 224, 224);
+}
+.underline{
+    width: 1200px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color : rgb(207, 204, 204);
+    margin-bottom: 20px;
+}
+.courses-grid {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.course {
+    display: flex;
+}
+
+.course-img {
+    margin: 24px 16px 16px 24px;
+}
+
+.courses-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 24px 16px 0;
+}
+
+.line-1,
+.line-2,
+.line-3,
+.line-4 {
+    display: flex;
+    margin: 7px 0 0 0;
+}
+
+.course-name {
+    font: normal normal bold 16px/20px 'Quicksand';
+    color: #222222;
+    margin-right: auto;
+}
+
+.regular-course-label {
+    font: normal normal bold 12px/16px 'Quicksand';
+    color: #666666;
+}
+
+.pipe {
+    margin: 0 5px;
+    color: rgb(0, 0, 0, 0.12);
+}
+
+.plus {
+    margin-left: 5px;
+    color: #1F7A54;
+}
+
+.number-line-2 {
+    font-weight: bolder;
+    color: #222222;
+    margin-right: 4px;
+}
+
+.course-class-input {
+    font: normal normal bold 16px/20px 'Quicksand';
+    color: #222222;
+    border: none;
+    border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
+    margin: 18px 0 13px 0;
+}
+
+.lm {
+    margin-left: 4px;
+}
+
+.courses-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 9px 20px;
+    border-top: rgb(0, 0, 0, 0.12) 1px solid;
+    margin: auto 24px 0 24px;
+}
+
+.courses-icons>img:hover,
+.star:hover,
+.sort:hover,
+.contact:hover,
+.about:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.contact-div {
+    justify-content: center;
+    display: flex;
+    font: normal normal bold 14px/18px 'Quicksand';
+    letter-spacing: 0px;
+    color: #1F7A54;
+    margin: 16px 16px 16px 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .bell{
+        margin-left: auto;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
